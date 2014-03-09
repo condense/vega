@@ -37,7 +37,7 @@ vg.parse.axes = (function() {
     // axis values
     axis.tickValues(def.values || null);
     // axis label formatting
-    axis.tickFormat(def.format ? d3.format(def.format) : null);
+    axis.tickFormat(def.tickFormat || def.format ? d3.format(def.format) : null);
     // axis tick subdivision
     axis.tickSubdivide(def.subdivide || 0);
     // axis tick padding
